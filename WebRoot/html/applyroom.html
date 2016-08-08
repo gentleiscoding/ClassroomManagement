@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>申请教室</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<link href="../css/flat-ui.css" rel="stylesheet" />
+<link href="../css/style.css" rel="stylesheet" />
+<link href="../css/apply.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="headerSection">
+		<div class="container">
+			<div class="span3 logo" id="sayhello">
+				<a href="#" id="nihao"><img src="../img/logo1.png" alt="" />你好，同学</a>
+			</div>
+
+			<div class="navbar">
+
+
+				<div class="nav-collapse">
+					<ul class="nav mynav">
+						<li><a
+							href="/classroommanage/classroomser?state=loginout&identity=student">注销</a></li>
+						<li><a href="/classroommanage/html/homeforstudent.html">学生主页</a></li>
+						<li><a href="/classroommanage/html/search.html">查询空教室</a></li>
+						<li><a href="/classroommanage/html/feedback.html"
+							target="_blank">故障反馈</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--Header Ends================================================ -->
+
+	<!-- 提交申请的表单 -->
+	<form class="applyform" id="applyform">
+		<select data-toggle="select"
+			class="form-control select select-success mrs mbm select1"
+			id="selectweek" style="text-align:center" name="room">
+			<option value="5-101">5-101</option>
+			<option value="5-103">5-103</option>
+			<option value="5-101">5-105</option>
+			<option value="5-103">5-107</option>
+			<option value="5-101">5-201</option>
+			<option value="5-103">5-203</option>
+			<option value="5-101">5-205</option>
+			<option value="5-103">5-207</option>
+			<option value="5-101">5-301</option>
+			<option value="5-103">5-303</option>
+			<option value="5-101">5-305</option>
+			<option value="5-103">5-307</option>
+			<option value="5-101">5-401</option>
+			<option value="5-103">5-403</option>
+			<option value="5-101">5-405</option>
+			<option value="5-103">5-407</option>
+		</select>
+		<!--  选择周数-->
+		<select data-toggle="select"
+			class="form-control select select-success mrs mbm select2"
+			id="selectweek" style="text-align:center" name="week">
+			<option value="第1周">第&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周</option>
+			<option value="第2周">第&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周</option>
+		</select>
+		<!--选择周几  -->
+		<select data-toggle="select"
+			class="form-control select select-success mrs mbm select2"
+			id="selectday" style="text-align:center" name="day">
+			<option value="周一">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一</option>
+			<option value="周二">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二</option>
+			<option value="周三">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三</option>
+			<option value="周四">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四</option>
+			<option value="周五">周&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五</option>
+		</select>
+		<!--选择时段 -->
+		<select data-toggle="select"
+			class="form-control select select-success mrs mbm select3"
+			id="selecttime" style="text-align:center" name="time">
+			<option value="第1大节">第&nbsp;&nbsp;一&nbsp;&nbsp;大&nbsp;&nbsp;节</option>
+			<option value="第2大节">第&nbsp;&nbsp;二&nbsp;&nbsp;大&nbsp;&nbsp;节</option>
+			<option value="第3大节">第&nbsp;&nbsp;三&nbsp;&nbsp;大&nbsp;&nbsp;节</option>
+			<option value="第4大节">第&nbsp;&nbsp;四&nbsp;&nbsp;大&nbsp;&nbsp;节</option>
+			<option value="第5大节">第&nbsp;&nbsp;五&nbsp;&nbsp;大&nbsp;&nbsp;节</option>
+		</select>
+		<!--选择是否使用多媒体 -->
+		<div class="col-md-2" id="duomeiti">
+			是否使用多媒体 <input type="checkbox" data-toggle="switch"
+				data-on-color="success" data-off-color="warning" name="duomeiti"
+				id="custom-switch-06" value="是" />
+		</div>
+
+		<!--填写用途 -->
+		<div class="form-group">
+			<textarea class="form-control" id="purpose" name="purpose"
+				placeholder="用途"></textarea>
+		</div>
+		<input type="hidden" name="state" value="applyroom" />
+
+	</form>
+	<!-- 提交 -->
+	<input type="button" class="btn btn-primary" id="applybutton"
+		value="OK" />
+
+	<!-- Sectionone block ends======================================== -->
+
+
+
+	<!-- 显示已提交申请  -->
+	<div class="showapoly" id="showapply">
+		<div class="applyitem" style="text-align:center" id="applycontent">
+		</div>
+
+
+
+		<!--  分页 -->
+		<div class="pagination pagination-warning" id="pagination">
+			<a href="javascript:void(0)" onclick="older()"
+				class="btn btn-warning previous">上一页 <i class="fui-arrow-left"></i>
+			</a>
+			<ul>
+				<li><a href="javascript:void(0)" onclick="showapply(1)">1</a></li>
+				<li><a href="javascript:void(0)" onclick="showapply(2)">2</a></li>
+				<li><a href="javascript:void(0)" onclick="showapply(3)">3</a></li>
+				<li><a href="javascript:void(0)" onclick="showapply(4)">4</a></li>
+				<li><a href="javascript:void(0)" onclick="showapply(5)">5</a></li>
+			</ul>
+			<a href="javascript:void(0)" onclick="newer()"
+				class="btn btn-warning next">下一页 <i class="fui-arrow-right"></i>
+			</a>
+		</div>
+	</div>
+	<div class="footerSection container">
+
+
+		<div class=" col-sm-6 socialicon">
+			<a class="facebook"
+				href="http://www.facebook.com></a> <a
+				class="
+				twitter" href="http://www.twitter.com"></a> <a class="html5"
+				href="#"></a> <a class="icon2" href="#"></a>
+		</div>
+
+
+
+		<div class="copyright">
+			<p>
+				Copyright 2015 | Developed By <a href="http://www.tb3.co.in">Gentle
+					Lam</a>
+			</p>
+		</div>
+		<!--To remove this copyright notice, please donate via Xtendify at - https://www.xtendify.com/en/product/103-colorful-flat-bootstrap-theme. It will support the development process -->
+
+	</div>
+
+
+
+
+
+
+	<!-- Wrapper end -->
+
+
+	<a href="#" class="go-top"><i class="glyphicon glyphicon-arrow-up"></i></a>
+
+
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.scrollTo-1.4.3.1-min.js"
+		type="text/javascript"></script>
+	<script src="../js/jquery.easing-1.3.min.js" type="text/javascript"></script>
+	<script src="../js/flat-ui.min.js" type="text/javascript"></script>
+	<script src="../js/application.js" type="text/javascript"></script>
+	<script src="../js/judgelogin/studentjudge.js"></script>
+	<script src="../js/applypagination.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myCarousel').carousel({
+				interval : 7000
+			});
+
+		});
+	</script>
+</body>
+</html>

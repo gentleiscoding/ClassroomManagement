@@ -1,0 +1,107 @@
+#applyform {
+	font-family:"黑体";
+	position: absolute;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	width: 400px;
+	height: 400px;
+	margin-left: 180px;
+	margin-top: 20px;
+}
+
+.footerSection {
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 470px;
+}
+
+#purpose {
+	font-family:"黑体";
+	position: absolute;
+	width: 300px;
+	height: 70px;
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+#duomeiti {
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.select1 {
+	font-family:"黑体";
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.select2 {
+	font-family:"黑体";
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+.select3 {
+	font-family:"黑体";
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#applybutton {
+	
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 600px;
+	margin-top: 200px;
+	font-size: 20px;
+	border-radius: 50px;
+	padding: 12px 10px;
+}
+
+#showapply {
+	position: absolute;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	width: 400px;
+	height: 400px;
+	margin-left: 760px;
+	margin-top: 20px;
+}
+
+.applyitem {
+	font-family:"黑体";
+	color:#FFFFFF;
+	height:300px;
+	width:380px;
+	font-size:15px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.pagination-warning{
+		position: absolute;
+	margin-left:33px;
+	margin-top:20px;
+	
+}
+
+.previous{
+	width:50px;
+	height:30px;
+
+	
+}
+.next{
+	width:50px;
+	height:30px;
+}
+#applyitemp{
+	font-size:15px;
+	background-color:#F1C40F;
+	border-radius: 10px;
+}
+ 	

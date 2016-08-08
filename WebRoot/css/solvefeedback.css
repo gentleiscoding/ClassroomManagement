@@ -1,0 +1,78 @@
+#unexamined {
+	
+	position: absolute;
+	width: 1000px;
+	height:580px;
+	margin-top: 10px;
+	margin-left: 160px;
+	padding-top:-100px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+}
+#examined {	
+	position: absolute;
+	width: 1000px;
+	height:580px;
+	margin-top: px;
+	margin-left: 160px;
+	padding-top:-100px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+visibility:hidden;
+}
+
+.table-striped {
+	font-family:"黑体";
+	position: absolute;
+
+}
+
+.footerSection {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 650px;
+}
+.btn{
+	margin-top:-8px;
+	margin-bottom:-7px;
+	font-family:"黑体";
+	width:60px;
+	height:40px;
+}
+.btn-danger{
+	width:60px;
+	height:40px;
+	padding-left:7px;
+}
+#showunexamined{
+	font-family:"黑体";
+	color:#2ECC71;
+	font-weight:bolder;
+	font-size:30px;
+	margin-left:20px;
+}
+
+#showemanined{
+	font-family:"黑体";
+	color:#E74C3C;
+	font-weight:bolder;
+	font-size:30px;
+	margin-left:770px;
+}
+}
+.page-header{
+	margin-top:20px;
+	margin-bottom:1px;
+	padding-bottom:4px;
+}
+
+.pagination-default{
+	margin-top:450px;
+	margin-left:320px;
+}
+.previous{	
+	height:25px;
+}
+.next{	
+	height:25px;
+}

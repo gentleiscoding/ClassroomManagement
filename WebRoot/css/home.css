@@ -1,0 +1,78 @@
+body {
+	background-color: #1ABC9C;
+}
+
+.logo {
+	width: 500px;
+	height: 500px;
+	margin-left: 140px;
+	margin-top: 50px;
+}
+
+.homelogo {
+	width: 500px;
+	height: 500px;
+}
+
+.login-formin {
+	width: 500px;
+	height: 300px;
+	margin-top: -410px;
+	margin-left: 620px;
+	border-radius: 20px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	font-family: "汉仪菱心体简";
+}
+
+#id {
+	width: 300px;
+	height: 40px;
+	margin-top: 45px;
+	margin-left: 80px;
+}
+
+#password {
+	width: 300px;
+	height: 40px;
+	margin-top: -35px;
+	margin-left: 80px;
+}
+
+#student {
+	width:90px;
+	margin-top: 5px;
+	margin-left: 80px;
+	padding-right:0px;
+}
+
+#wuye {
+	width:90px;
+	margin-top: -34px;
+	margin-left: 190px;
+}
+
+#manager {
+	width:90px;
+	margin-top: -34px;
+	margin-left: 290px;
+}
+
+#loginbutton {
+	position:absolute;
+		font-family: "汉仪菱心体简";
+	margin-top: -10px;
+	margin-left: 205px;
+}
+#error{
+	color:#E74C3C;
+	height:40px;
+	width:100px;
+		margin-top:-10px;
+		margin-left:90px;	
+}
+#nihao{
+	font-size:80px;
+}
+
+

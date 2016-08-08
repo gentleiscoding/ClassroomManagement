@@ -1,0 +1,155 @@
+#searchroom {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	margin-top: 280px;
+	margin-left: 240px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	font-family: "楷体";
+	z-index: 2;
+}
+
+.select-success {
+	margin-left: 37px;
+	text-align: center"
+}
+
+.select-warning {
+	margin-left: 37px;
+	font-family: "楷体";
+	text-align: center"
+}
+
+.select1 {
+	margin-top: 40px;
+}
+
+.select2 {
+	margin-top: 20px;
+}
+
+#searchtime {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	margin-left: 790px;
+	margin-top: 280px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	font-family: "楷体";
+	z-index: 2;
+}
+
+#fangdajing1 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 570px;
+	margin-top: 350px;
+	z-index: 2;
+}
+
+#fangdajing2 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 1120px;
+	margin-top: 350px;
+	z-index: 2;
+}
+
+#kongjiaoshi {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	margin-left: 270px;
+	margin-top: 20px;
+	z-index: 2;
+}
+
+#kongshiduan {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	margin-left: 815px;
+	margin-top: 5px;
+	z-index: 3;
+	width: 250px;
+}
+
+.cover {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	filter: alpha(opacity = 60);
+	background-color: #777;
+	z-index: 1002;
+	left: 0px;
+	visibility: hidden;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+}
+
+.thumbnail {
+	position: absolute;
+	width: 410px;
+	margin-left: 35%;
+	margin-top: 15%;
+	background-color: #1ABC9C;
+	z-index: 1003;
+	visibility: hidden;
+	/* 	display: none; */
+}
+
+.footerSection {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 600px;
+}
+
+#show {
+	position: absolute;
+	background-color: #EDEFF1;
+	border-radius: 20px;
+	width: 400px;
+	height: 470px;
+	margin-left: 760px;
+	margin-top: 20px;
+}
+
+#douzailimian {
+	width: 400px;
+	height: 400px;
+}
+
+.applyitem {
+	font-family: "黑体";
+	color: #FFFFFF;
+	height: 30px;
+	width: 380px;
+	font-size: 15px;
+	background-color: #F1C40F;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.pagination-warning {
+	position: absolute;
+	margin-left: 33px;
+	margin-top:0px;
+}
+
+.previous {
+	width: 50px;
+	height: 30px;
+}
+
+.next {
+	width: 50px;
+	height: 30px;
+}
